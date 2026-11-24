@@ -12,6 +12,8 @@ model only when a source changed, and refreshes a sales dashboard.
 
 | Requirement | Where |
 |---|---|
+| **Technical report (10-15 pages)** | [deliverables/technical_report.pdf](deliverables/technical_report.pdf) (11 pages; rebuild: `python -m deliverables.build_report`) |
+| **Executive presentation (8-12 slides)** | [deliverables/executive_presentation.pptx](deliverables/executive_presentation.pptx) (11 slides + 2 hidden appendix slides, speaker notes; rebuild: `python -m deliverables.build_deck`) |
 | Raw dataset(s) | [data/raw/](data/raw/) - 14 NSO tables, each as the original JSON download **and** a flat CSV; [data/raw/README.md](data/raw/README.md) describes every file; `manifest.csv` holds URL, time and SHA-256 per download |
 | Preliminary model file (notebook) | [notebooks/01_preliminary_model.ipynb](notebooks/01_preliminary_model.ipynb) (executed, outputs saved); regenerate with `notebooks/build_notebook.py` |
 | Well-commented code | `src/vnlube/*.py` (module docstrings, function docstrings, inline comments on the logic), `sql/*.sql`, `dashboard/app.py` |
@@ -115,6 +117,7 @@ growth. See [docs/methodology.md](docs/methodology.md).
 src/vnlube/        ingest, nso_client, jsonstat, transform, statistics, forecast, demand, figures, report, pipeline
 sql/               01_reference.sql, 02_clean.sql, 03_marts.sql (all cleaning & harmonisation)
 notebooks/         01_preliminary_model.ipynb (executed) + build_notebook.py (generates it)
+deliverables/      technical_report.pdf, executive_presentation.pptx + the scripts that generate them
 data/raw/          NSO downloads: original JSON-stat + flat CSV per table, manifest.csv, README.md
 data/reference/    hand-maintained reference tables with sources
 dashboard/         app.py (Streamlit) + data/ (CSV star schema for Streamlit / Power BI)
