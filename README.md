@@ -5,10 +5,14 @@ diesel oil (HDMO)** across Vietnam's 34 provinces, built on official statistics 
 Statistics Office (NSO, formerly GSO). The pipeline checks the NSO database for new releases, rebuilds the
 model only when a source changed, and refreshes a sales dashboard.
 
+> **Live dashboard: <https://vietnam-lubricant-demand-tram.streamlit.app/>**
 > Latest results: **[reports/findings.md](reports/findings.md)** (regenerated on every run).
 > Preliminary model walkthrough: **[notebooks/01_preliminary_model.ipynb](notebooks/01_preliminary_model.ipynb)**.
 
 ## Dashboard
+
+**Live:** <https://vietnam-lubricant-demand-tram.streamlit.app/> (Streamlit Community Cloud; if it shows
+"This app has gone to sleep", click the wake-up button and wait about 30 seconds).
 
 ![Dashboard: province ranking by segment](reports/figures/dashboard_screenshot.png)
 
