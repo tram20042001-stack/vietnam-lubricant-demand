@@ -1,0 +1,5 @@
+# Minimal dependencies for the hosted dashboard (Streamlit Community Cloud reads the requirements
+# file next to the app first). The full pipeline uses the root requirements.txt (Windows-pinned).
+streamlit==1.67.0
+pandas==2.3.3
+plotly==7.1.0

@@ -5,6 +5,7 @@ Reads the CSV exports in dashboard/data written by `python -m vnlube.pipeline`.
 """
 from __future__ import annotations
 
+import importlib.util
 import json
 import subprocess
 import sys
@@ -68,7 +69,12 @@ left, right = st.columns([4, 1])
 left.title("Vietnam lubricant demand potential")
 left.caption("Official NSO vehicle, population, income and freight statistics -> Monte Carlo demand model "
              f"(litres/year). Last pipeline run: {meta.get('run_at_utc', 'n/a')} - {meta.get('outcome', '')}")
-if right.button("Check NSO for new data", help="Downloads the latest NSO tables; rebuilds only if something changed"):
+# The refresh button needs the full pipeline (package `vnlube`), which exists only in a local install.
+# The hosted copy (Streamlit Community Cloud) shows the data committed to GitHub instead.
+PIPELINE_AVAILABLE = importlib.util.find_spec("vnlube") is not None
+if not PIPELINE_AVAILABLE:
+    right.caption("Hosted copy: shows the data in the GitHub repo; refreshed when the repo is updated.")
+elif right.button("Check NSO for new data", help="Downloads the latest NSO tables; rebuilds only if something changed"):
     with st.spinner("Checking NSO PX-Web for new releases..."):
         r = subprocess.run([sys.executable, "-m", "vnlube.pipeline"], cwd=ROOT, capture_output=True, text=True)
     st.cache_data.clear()

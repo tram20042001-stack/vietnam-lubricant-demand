@@ -8,6 +8,25 @@ model only when a source changed, and refreshes a sales dashboard.
 > Latest results: **[reports/findings.md](reports/findings.md)** (regenerated on every run).
 > Preliminary model walkthrough: **[notebooks/01_preliminary_model.ipynb](notebooks/01_preliminary_model.ipynb)**.
 
+## Dashboard
+
+![Dashboard: province ranking by segment](reports/figures/dashboard_screenshot.png)
+
+**Run locally** (full version, with the "Check NSO for new data" button):
+
+```powershell
+.\.venv\Scripts\streamlit.exe run dashboard\app.py     # then open http://localhost:8501
+```
+
+**Host it online for free** (Streamlit Community Cloud, reads this GitHub repo):
+
+1. Sign in at <https://share.streamlit.io> with your GitHub account.
+2. **Create app** -> *Deploy a public app from GitHub* -> repository `tram20042001-stack/vietnam-lubricant-demand`,
+   branch `main`, main file path `dashboard/app.py` -> **Deploy**.
+3. The app gets a public `https://<name>.streamlit.app` link. It installs only `dashboard/requirements.txt`
+   and shows the data committed in `dashboard/data/`. Every push to GitHub (for example after the weekly
+   pipeline run) redeploys it with the new numbers.
+
 ## Submission checklist
 
 | Requirement | Where |
