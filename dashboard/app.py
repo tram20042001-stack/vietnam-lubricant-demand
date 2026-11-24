@@ -26,9 +26,17 @@ GRID, MUTED = "#e1e0d9", "#898781"
 st.set_page_config(page_title="VN Lubricant Demand", page_icon="🛢️", layout="wide")
 
 
+def data_version() -> float:
+    """Timestamp of the last pipeline run. The pipeline rewrites run_metadata.json on every run, so a
+    new value means new data on disk."""
+    meta_file = DATA / "run_metadata.json"
+    return meta_file.stat().st_mtime if meta_file.exists() else 0.0
+
+
 @st.cache_data
-def load() -> dict[str, pd.DataFrame]:
-    """Read every exported table once per session (Streamlit caches the result)."""
+def load(version: float) -> dict[str, pd.DataFrame]:
+    """Read every exported table. The cache is keyed on `version`, so after a scheduled pipeline run
+    the next page refresh reloads the data automatically, even if the app was left running."""
     names = ["dim_province", "fact_demand", "national_demand", "priority", "fact_vehicles_2025",
              "fact_drivers_forecast", "hypothesis_tests", "backtest_summary", "sensitivity",
              "assumptions_lubricant", "dq_vehicle_totals", "dq_missingness", "outliers", "fact_province_year",
@@ -51,7 +59,7 @@ if not (DATA / "priority.csv").exists():
     st.error("No outputs yet - run `python -m vnlube.pipeline --force` first.")
     st.stop()
 
-d = load()
+d = load(data_version())
 dim = d["dim_province"]
 meta = json.loads((DATA / "run_metadata.json").read_text(encoding="utf-8")) if (DATA / "run_metadata.json").exists() else {}
 

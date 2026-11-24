@@ -1,8 +1,8 @@
 ﻿sid,geo_level,missing_type,n_cells,min_year,max_year,units
-p63_road_passengers,province,structural,27,2000,2025,"Hà Tây, Đắk Nông, Lai Châu, Hậu Giang"
-nat_industrial,national,structural,416,1995,2025,CẢ NƯỚC
 p63_road_freight,province,structural,27,2000,2025,"Đắk Nông, Hà Tây, Lai Châu, Hậu Giang"
 p34_accidents,unallocated,structural,1,2025,2025,Khác
 p63_population,province,structural,225,1995,2025,"Hậu Giang, Ðiện Biên, Ðắk Nông, Hà Tây"
 p63_road_passengers,province,random,1,2019,2019,Hòa Bình
 nat_industrial,national,random,79,1999,2007,CẢ NƯỚC
+p63_road_passengers,province,structural,27,2000,2025,"Hà Tây, Đắk Nông, Lai Châu, Hậu Giang"
+nat_industrial,national,structural,416,1995,2025,CẢ NƯỚC

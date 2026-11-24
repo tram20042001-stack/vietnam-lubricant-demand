@@ -1,6 +1,6 @@
 # Findings - Vietnam lubricant demand potential
 
-_Generated 2026-11-22 17:50 by `python -m vnlube.pipeline`. Every number below is recomputed from the official NSO data on each run._
+_Generated 2026-11-24 12:23 by `python -m vnlube.pipeline`. Every number below is recomputed from the official NSO data on each run._
 
 ## Headline
 
@@ -88,7 +88,7 @@ Top parameters by rank correlation with the national 2025 total: `MCO.drain_inte
 
 - 63->34 province roll-up reproduces the official 34-province figures for 2020-2025: max absolute difference 0.0000% (population), 0.0010% (road freight), 0.0000% (GRDP per capita).
 - Provincial vehicle counts add up exactly to the published regional and national totals (86,816 thousand vehicles).
-- Missing values: p63_road_passengers structural x27; nat_industrial structural x416; p63_road_freight structural x27; p34_accidents structural x1; p63_population structural x225; p63_road_passengers random x1; nat_industrial random x79.
+- Missing values: p63_road_freight structural x27; p34_accidents structural x1; p63_population structural x225; p63_road_passengers random x1; nat_industrial random x79; p63_road_passengers structural x27; nat_industrial structural x416.
 - Series breaks: 16 provinces show an urban-share jump in 2025 caused by the commune-level reform; the model uses the 2024 urban share.
 - Outliers (robust z > 3.5): Thai Nguyen (accident-rate outlier), Lang Son (accident-rate outlier). They are kept (they are real) and reported.
 
