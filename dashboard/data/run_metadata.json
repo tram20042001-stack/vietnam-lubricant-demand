@@ -1,0 +1,7 @@
+{
+  "run_at_utc": "2026-11-22T10:50:38+00:00",
+  "outcome": "rebuilt (changed sources: none)",
+  "seconds": 26.8,
+  "sources": {},
+  "monte_carlo_draws": 10000
+}

@@ -1,0 +1,7 @@
+run_at_utc,outcome,seconds,monte_carlo_draws
+2026-11-22T10:04:46+00:00,rebuilt (changed sources: none),29.2,10000
+2026-11-22T10:07:26+00:00,rebuilt (changed sources: none),13.1,10000
+2026-11-22T10:10:26+00:00,no new data - outputs unchanged,28.3,10000
+2026-11-22T10:12:20+00:00,rebuilt (changed sources: none),26.9,10000
+2026-11-22T10:43:18+00:00,rebuilt (changed sources: none),12.6,10000
+2026-11-22T10:50:38+00:00,rebuilt (changed sources: none),26.8,10000

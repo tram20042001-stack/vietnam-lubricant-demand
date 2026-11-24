@@ -1,0 +1,8 @@
+parameter,low,mode,high,unit,rationale,source
+national_cars_2025,6800000,7200000,7600000,vehicles,"End-2024 register of ~6.8 million cars (Vietnam Register) plus 2025 net additions; NSO publishes cars and motorbikes only as one combined total by province",https://vietnamnews.vn/economy/1690616/only-nine-per-cent-of-households-in-viet-nam-own-a-car.html
+passenger_share_of_cars,0.48,0.52,0.56,share,"~3.45 million of ~6.8 million registered cars had 9 seats or fewer at end-2024; the remainder are trucks, buses, pickups and special vehicles",https://vietnamnews.vn/economy/1690616/only-nine-per-cent-of-households-in-viet-nam-own-a-car.html
+car_income_elasticity,0.6,1.0,1.4,elasticity,"Allocation of cars across provinces: car share of the provincial fleet scales with (GRDP per capita)^elasticity; range covers published income elasticities of car ownership in developing economies",assumption
+commercial_freight_weight,0.3,0.5,0.7,weight,"Share of the commercial-vehicle allocation driven by road freight tonnage (rest follows the car allocation)",assumption
+moto_density_income_elasticity,-0.10,0.05,0.25,elasticity,"Forecast: motorbikes per capita respond weakly to income because ownership is near saturation (~780 motorbikes per 1000 people in 2025)",assumption
+commercial_freight_elasticity,0.5,0.7,0.9,elasticity,"Forecast: commercial-vehicle fleet growth relative to road freight tonnage growth",assumption
+car_density_income_elasticity,0.9,1.2,1.6,elasticity,"Forecast: cars per capita growth relative to real GRDP per capita growth",assumption

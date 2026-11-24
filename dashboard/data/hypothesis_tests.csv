@@ -1,0 +1,4 @@
+﻿test,method,n,statistic,p_value,p_holm,reject_h0,effect_name,effect_size,ci95
+H1 density differs across regions,Kruskal-Wallis,34,15.06162464985995,0.010102245266341804,0.03030673579902541,True,epsilon^2,0.35934373749499826,None
+H2 density increases with GRDP per capita,"OLS log-log, HC3, one-sided",34,-0.302867031508848,0.6190044014670033,1.0,False,income elasticity,-0.029591628171903084,"[-0.22108994072143692, 0.16190668437763076]"
+H3 lower-density provinces grow faster (headroom),"Spearman, one-sided, bootstrap CI",34,0.04629488158899923,0.602562517642596,1.0,False,Spearman rho,0.04629488158899923,"[np.float64(-0.32670306596116905), np.float64(0.4122059363343803)]"

@@ -1,0 +1,11 @@
+﻿model,assumption,check,statistic,p_value,passed,consequence
+H2 OLS,Residuals normally distributed,Shapiro-Wilk,0.9541347782897964,0.16322310435537862,True,"If violated, rely on HC3 / bootstrap inference rather than exact t-tests"
+H2 OLS,Residual skewness/kurtosis normal,Jarque-Bera,3.8937507037302224,0.1427193232640863,True,Large-sample normality check; complements Shapiro-Wilk
+H2 OLS,Homoscedastic errors,Breusch-Pagan,1.6998018720896242,0.4274572754597151,True,HC3 robust standard errors are used either way
+H2 OLS,Linear (log-log) functional form,Ramsey RESET,4.761423932043997,0.03706988521050097,False,"If violated, add non-linear terms"
+H2 OLS,No multicollinearity (log_grdp),VIF,2.135851652586461,,True,VIF < 5 means coefficients are separately identifiable
+H2 OLS,No multicollinearity (urban_share_model),VIF,2.1358516525864615,,True,VIF < 5 means coefficients are separately identifiable
+H2 OLS,No single province drives the fit,Cook's D > 4/n (count),4.0,,False,Robustness refit without influential provinces is reported
+H2 OLS,Independent errors (north-south order),Durbin-Watson,1.0675570211606178,,False,Values near 2 mean no serial / spatial correlation along the country
+H1 Kruskal-Wallis,Similar spread across regions,"Brown-Forsythe (Levene, median)",0.17293960332900435,0.9704947973308589,True,"If violated, H1 is read as 'distributions differ', not strictly 'medians differ'"
+H1 Kruskal-Wallis,At least 3 observations per group,min group size,3.0,,True,Chi-square approximation of H needs reasonable group sizes

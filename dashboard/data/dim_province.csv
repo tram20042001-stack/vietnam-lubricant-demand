@@ -1,0 +1,35 @@
+﻿province_code,province_vi,province_en,region_vi,region_en,merged_from_count,area_km2,is_hn_hcmc
+P01,Hà Nội,Ha Noi,Đồng bằng sông Hồng,Red River Delta,1,3359.84,True
+P02,Bắc Ninh,Bac Ninh,Đồng bằng sông Hồng,Red River Delta,2,4713.75,False
+P03,Quảng Ninh,Quang Ninh,Đồng bằng sông Hồng,Red River Delta,1,6231.27,False
+P04,Hải Phòng,Hai Phong,Đồng bằng sông Hồng,Red River Delta,2,3184.49,False
+P05,Hưng Yên,Hung Yen,Đồng bằng sông Hồng,Red River Delta,2,2637.84,False
+P06,Ninh Bình,Ninh Binh,Đồng bằng sông Hồng,Red River Delta,3,3946.06,False
+P07,Cao Bằng,Cao Bang,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,1,6702.0,False
+P08,Tuyên Quang,Tuyen Quang,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,2,13796.0,False
+P09,Lào Cai,Lao Cai,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,2,13255.0,False
+P10,Thái Nguyên,Thai Nguyen,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,2,8375.0,False
+P11,Lạng Sơn,Lang Son,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,1,8307.0,False
+P12,Phú Thọ,Phu Tho,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,3,9347.0,False
+P13,Điện Biên,Dien Bien,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,1,9548.0,False
+P14,Lai Châu,Lai Chau,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,1,9069.0,False
+P15,Sơn La,Son La,Trung du và miền núi phía Bắc,Northern Midlands and Mountains,1,14109.0,False
+P16,Thanh Hóa,Thanh Hoa,Bắc Trung Bộ,North Central,1,11111.16,False
+P17,Nghệ An,Nghe An,Bắc Trung Bộ,North Central,1,16486.08,False
+P18,Hà Tĩnh,Ha Tinh,Bắc Trung Bộ,North Central,1,5994.31,False
+P19,Quảng Trị,Quang Tri,Bắc Trung Bộ,North Central,2,12686.76,False
+P20,Huế,Hue,Bắc Trung Bộ,North Central,1,4947.110000000001,False
+P21,Đà Nẵng,Da Nang,Duyên hải Nam Trung Bộ và Tây Nguyên,South Central Coast and Central Highlands,2,11870.34,False
+P22,Quảng Ngãi,Quang Ngai,Duyên hải Nam Trung Bộ và Tây Nguyên,South Central Coast and Central Highlands,2,14825.97,False
+P23,Gia Lai,Gia Lai,Duyên hải Nam Trung Bộ và Tây Nguyên,South Central Coast and Central Highlands,2,21580.88,False
+P24,Khánh Hòa,Khanh Hoa,Duyên hải Nam Trung Bộ và Tây Nguyên,South Central Coast and Central Highlands,2,8706.75,False
+P25,Đắk Lắk,Dak Lak,Duyên hải Nam Trung Bộ và Tây Nguyên,South Central Coast and Central Highlands,2,18099.8,False
+P26,Lâm Đồng,Lam Dong,Duyên hải Nam Trung Bộ và Tây Nguyên,South Central Coast and Central Highlands,3,24239.1,False
+P27,Tây Ninh,Tay Ninh,Đông Nam Bộ,Southeast,2,8524.400000000001,False
+P28,Đồng Nai,Dong Nai,Đông Nam Bộ,Southeast,2,12737.18,False
+P29,TP. Hồ Chí Minh,Ho Chi Minh City,Đông Nam Bộ,Southeast,3,6796.91,True
+P30,Vĩnh Long,Vinh Long,Đồng bằng sông Cửu Long,Mekong River Delta,3,6875.861085999999,False
+P31,Đồng Tháp,Dong Thap,Đồng bằng sông Cửu Long,Mekong River Delta,2,5938.558769999999,False
+P32,An Giang,An Giang,Đồng bằng sông Cửu Long,Mekong River Delta,2,9893.922894999996,False
+P33,Cần Thơ,Can Tho,Đồng bằng sông Cửu Long,Mekong River Delta,3,6360.976317000001,False
+P34,Cà Mau,Ca Mau,Đồng bằng sông Cửu Long,Mekong River Delta,2,7887.279368999997,False
